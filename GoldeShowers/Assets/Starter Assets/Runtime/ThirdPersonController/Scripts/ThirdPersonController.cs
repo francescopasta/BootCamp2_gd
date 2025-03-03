@@ -299,29 +299,29 @@ namespace StarterAssets
                     _verticalVelocity = -2f;
                 }
 
-                // Jump
-                if (_input.jump && _jumpTimeoutDelta <= 0.0f)
-                {
-                    // the square root of H * -2 * G = how much velocity needed to reach desired height
-                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                //// Jump
+                //if (_input.jump && _jumpTimeoutDelta <= 0.0f)
+                //{
+                //    // the square root of H * -2 * G = how much velocity needed to reach desired height
+                //    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
-                    // update animator if using character
-                    if (_hasAnimator)
-                    {
-                        _animator.SetBool(_animIDJump, true);
-                    }
-                }
+                //    // update animator if using character
+                //    if (_hasAnimator)
+                //    {
+                //        _animator.SetBool(_animIDJump, true);
+                //    }
+                //}
 
-                // jump timeout
-                if (_jumpTimeoutDelta >= 0.0f)
-                {
-                    _jumpTimeoutDelta -= Time.deltaTime;
-                }
+                //// jump timeout
+                //if (_jumpTimeoutDelta >= 0.0f)
+                //{
+                //    _jumpTimeoutDelta -= Time.deltaTime;
+                //}
             }
             else
             {
-                // reset the jump timeout timer
-                _jumpTimeoutDelta = JumpTimeout;
+                //// reset the jump timeout timer
+                //_jumpTimeoutDelta = JumpTimeout;
 
                 // fall timeout
                 if (_fallTimeoutDelta >= 0.0f)
@@ -337,8 +337,8 @@ namespace StarterAssets
                     }
                 }
 
-                // if we are not grounded, do not jump
-                _input.jump = false;
+                //// if we are not grounded, do not jump
+                //_input.jump = false;
             }
 
             // apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
