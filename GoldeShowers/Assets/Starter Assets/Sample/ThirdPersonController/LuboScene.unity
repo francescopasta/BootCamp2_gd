@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 110137084}
   - component: {fileID: 110137083}
   - component: {fileID: 110137082}
+  - component: {fileID: 110137085}
   m_Layer: 0
   m_Name: FireFire
   m_TagString: Untagged
@@ -227,6 +228,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110137080}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &110137085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110137080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99191a8aee8ec040a5f14ad97c0f228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 0
+  fireScript: {fileID: 0}
 --- !u!1 &114048493
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +612,7 @@ GameObject:
   - component: {fileID: 533922952}
   - component: {fileID: 533922951}
   - component: {fileID: 533922950}
+  - component: {fileID: 533922953}
   m_Layer: 0
   m_Name: FireFire
   m_TagString: Untagged
@@ -693,6 +709,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533922948}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &533922953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533922948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99191a8aee8ec040a5f14ad97c0f228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 0
+  fireScript: {fileID: 0}
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,6 +1215,7 @@ GameObject:
   - component: {fileID: 1200274705}
   - component: {fileID: 1200274704}
   - component: {fileID: 1200274703}
+  - component: {fileID: 1200274706}
   m_Layer: 0
   m_Name: FireFire
   m_TagString: Untagged
@@ -1281,6 +1312,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200274701}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1200274706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200274701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a99191a8aee8ec040a5f14ad97c0f228, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDie: 0
+  fireScript: {fileID: 0}
 --- !u!1001 &1221041499
 PrefabInstance:
   m_ObjectHideFlags: 0
