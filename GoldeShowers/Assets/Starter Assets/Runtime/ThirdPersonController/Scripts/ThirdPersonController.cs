@@ -251,9 +251,6 @@ namespace StarterAssets
             // normalise input direction
             Vector3 inputDirection = new Vector3(_input.move.x, 0.0f, _input.move.y).normalized;
 
-            // Check if "L" key is pressed to reverse rotation
-            bool isWalkingBackward = Input.GetKey(KeyCode.L);
-
             // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
             // if there is a move input rotate player when the player is moving
             if (_input.move != Vector2.zero)
@@ -262,7 +259,7 @@ namespace StarterAssets
                                   _mainCamera.transform.eulerAngles.y;
                 float rotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, _targetRotation, ref _rotationVelocity,
                     RotationSmoothTime);
-                if (isWalkingBackward)
+                if (Input.GetMouseButtonDown(0))
                 {
                     // rotate to face input direction relative to camera position
                     transform.rotation = Quaternion.Euler(0.0f, rotation + 180f, 0.0f);
