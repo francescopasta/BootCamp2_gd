@@ -1218,11 +1218,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: maxAngle
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: minAngle
-      value: -10
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3019440895113949254, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.984
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842605601657458404, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: NoiseModule.frequency
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842605601657458404, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: NoiseModule.strength.scalar
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6328389687309332923, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: m_Name
@@ -1234,7 +1246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7551844644200641334, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.601
+      value: 0.713
       objectReference: {fileID: 0}
     - target: {fileID: 7551844644200641334, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: m_LocalPosition.z
