@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!198 &14350613 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5842605601657458404, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+  m_PrefabInstance: {fileID: 1045765798}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &110137080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1784,7 +1789,7 @@ PrefabInstance:
     - target: {fileID: 4579722128254580394, guid: ddfd3f2825883804981dc03903a10d17, type: 3}
       propertyPath: piss
       value: 
-      objectReference: {fileID: 1743848538}
+      objectReference: {fileID: 14350613}
     - target: {fileID: 4579722128254580394, guid: ddfd3f2825883804981dc03903a10d17, type: 3}
       propertyPath: runOutTime
       value: 20
@@ -2095,11 +2100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _particleSystem: {fileID: 0}
---- !u!198 &1743848538 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4259500251161775419, guid: 1720b6b847f45dd4790e8f0c0840a169, type: 3}
-  m_PrefabInstance: {fileID: 1743848532}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1762682258
 PrefabInstance:
   m_ObjectHideFlags: 0
