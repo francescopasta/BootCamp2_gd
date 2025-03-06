@@ -119,6 +119,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &324523160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 324523162}
+  - component: {fileID: 324523161}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &324523161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324523160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfcaf2072b0bcd8479bd5054c61aa16e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnablePrefab: {fileID: 214228595512392577, guid: d97ec2958e4211a41962e7bdcbae05e9, type: 3}
+  spawnInterval: 2
+  spawnArea: {x: 25, y: 0, z: 25}
+  maxSpawnedObjects: 4
+--- !u!4 &324523162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324523160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.91708183, y: 4.2303805, z: 7.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &694328104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -514,6 +562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Capsule
       objectReference: {fileID: 0}
+    - target: {fileID: 214228595512392577, guid: d97ec2958e4211a41962e7bdcbae05e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2151676442395365454, guid: d97ec2958e4211a41962e7bdcbae05e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -568,3 +620,4 @@ SceneRoots:
   - {fileID: 1908162062}
   - {fileID: 694328104}
   - {fileID: 7027451652609407335}
+  - {fileID: 324523162}
