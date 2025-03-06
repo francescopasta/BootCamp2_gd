@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDie: 0
-  fireScript: {fileID: 0}
+  fireScript: {fileID: 121751558}
 --- !u!1 &114048493
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDie: 0
-  fireScript: {fileID: 0}
+  fireScript: {fileID: 2023193904}
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDie: 0
-  fireScript: {fileID: 0}
+  fireScript: {fileID: 114048495}
 --- !u!1001 &1221041499
 PrefabInstance:
   m_ObjectHideFlags: 0
