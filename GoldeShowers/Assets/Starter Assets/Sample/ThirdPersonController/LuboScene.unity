@@ -1217,12 +1217,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 1762682261}
     m_Modifications:
     - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: piss
+      value: 
+      objectReference: {fileID: 14350613}
+    - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: maxAngle
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: minAngle
       value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: basePissForce
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 591760551954169602, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: boostedPissForce
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 3019440895113949254, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1284,6 +1296,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7743997627655804742, guid: 36061b0c11d19284dae29760a4e2423d, type: 3}
+      propertyPath: _particleSystem
+      value: 
+      objectReference: {fileID: 14350613}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1838,6 +1854,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGettingPissed: 0
   deathTimer: 2
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  endColor: {r: 1, g: 0.77873516, b: 0, a: 1}
 --- !u!1001 &1743848532
 PrefabInstance:
   m_ObjectHideFlags: 0

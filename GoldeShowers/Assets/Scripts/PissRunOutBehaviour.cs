@@ -3,7 +3,8 @@ using UnityEngine;
 public class PissRunOutBehaviour : MonoBehaviour
 {
     private float pissTimer;
-    public float runOutTime;
+    public float runOutTime = 5f; // Default max pee time
+    public float fastDrainMultiplier = 2f; // Drains twice as fast when RMB is held
 
     public ParticleSystem piss;
 
@@ -12,19 +13,26 @@ public class PissRunOutBehaviour : MonoBehaviour
         piss.Play();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pissTimer = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (pissTimer < runOutTime) 
+        if (pissTimer < runOutTime)
         {
-            pissTimer += Time.deltaTime;
-            Debug.Log(pissTimer.ToString());
+            // Normal drain rate
+            float drainSpeed = Time.deltaTime;
+
+            // Faster drain when RMB is held
+            if (Input.GetMouseButton(1))
+            {
+                drainSpeed *= fastDrainMultiplier;
+            }
+
+            pissTimer += drainSpeed;
+            Debug.Log($"Piss Timer: {pissTimer}");
         }
         else
         {
@@ -34,18 +42,15 @@ public class PissRunOutBehaviour : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                DrinkWater();
-            }
+            DrinkWater();
         }
     }
 
     void DrinkWater()
     {
-        pissTimer = 0;
+        pissTimer = 0; // Reset pee timer
         piss.Play();
     }
 }
