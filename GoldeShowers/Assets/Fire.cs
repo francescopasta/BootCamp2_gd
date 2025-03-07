@@ -6,7 +6,7 @@ public class Fire : MonoBehaviour
     public List<Fire> fireList;
     public float minTimer;
     public float maxTimer;
-
+    public float minTimeBtwFlames;
     private float timerToLight;
     public GameObject fire;
 
@@ -38,8 +38,8 @@ public class Fire : MonoBehaviour
 
             if (i > 0)
             {
-                while (!(fireList[i].timerToLight >= fireList[i - 1].timerToLight + 1 ||
-                         fireList[i].timerToLight <= fireList[i - 1].timerToLight - 1))
+                while (!(fireList[i].timerToLight >= fireList[i - 1].timerToLight + minTimeBtwFlames ||
+                         fireList[i].timerToLight <= fireList[i - 1].timerToLight - minTimeBtwFlames))
                 {
                     fireList[i].timerToLight = Random.Range(minTimer, maxTimer);
                 }

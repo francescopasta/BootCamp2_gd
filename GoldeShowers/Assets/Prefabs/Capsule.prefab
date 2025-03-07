@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 2399364907557213196}
   - component: {fileID: 6112297072868831804}
   - component: {fileID: 7855402888874691286}
+  - component: {fileID: 2935105997620035066}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +154,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &2935105997620035066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 214228595512392577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e10112eb4079334b8d262473a2be5ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGettingPissed: 0
+  deathTimer: 2
+  startColor: {r: 1, g: 1, b: 1, a: 1}
+  endColor: {r: 1, g: 0.77873516, b: 0, a: 1}
